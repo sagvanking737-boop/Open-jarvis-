@@ -1,0 +1,138 @@
+════════════════════════════════════════════════════════════════════════════════
+                        🤖 JARVIS MASTER LAUNCHER
+                              QUICK REFERENCE
+════════════════════════════════════════════════════════════════════════════════
+
+📍 START:  Double-Click  E:\Mark-XXXIX-main\JARVIS.bat
+
+════════════════════════════════════════════════════════════════════════════════
+                              MAIN MENU
+════════════════════════════════════════════════════════════════════════════════
+
+1  TRADING
+   ├─ Autonomous Trading starten (Background)
+   ├─ Manueller Trade (BTC/ETH/XRP/etc.)
+   ├─ Trading-Überwachung starten
+   ├─ Alle Trades anzeigen
+   └─ Trading deaktivieren (Safety)
+
+2  DOWNLOAD
+   ├─ blender, python, git, vscode, nodejs, firefox
+   └─ Auto-Installation optional
+
+3  RESEARCH
+   ├─ Web-Recherche (Google)
+   ├─ Top 5 Ergebnisse
+   └─ Multi-Source
+
+4  SCREEN (Bildschirm)
+   ├─ Screenshot + Analyse
+   ├─ Windows-Erkennung
+   └─ OCR Text-Extraktion
+
+5  STATUS
+   ├─ System-Health checken
+   ├─ Logs anzeigen
+   └─ Task-Count
+
+6  SETTINGS
+   ├─ API-Keys (.env) prüfen
+   ├─ State zurücksetzen
+   ├─ Logs löschen
+   └─ Konfigurieren
+
+7  VOICE (Sprachbefehl)
+   ├─ Interaktive Eingabe
+   └─ "quit" zum Beenden
+
+0  EXIT
+
+════════════════════════════════════════════════════════════════════════════════
+                            EXAMPLES
+════════════════════════════════════════════════════════════════════════════════
+
+🚀 TRADING:
+   > 1
+   > 2 (Manueller Trade)
+   > Symbol: BTC
+   > Seite: BUY
+   > Menge: 0.5
+   > Preis: 45000
+
+📥 DOWNLOAD:
+   > 2
+   > blender
+   → Startet Download von blender.org
+
+🔍 RESEARCH:
+   > 3
+   > Kubernetes Architecture
+   → [+] 5 Ergebnisse gefunden
+
+📱 SCREENSHOT:
+   > 4
+   > 1 (Screenshot + Analyse)
+   → ✓ Erfasst und analysiert
+
+🎤 VOICE:
+   > 7
+   >> Trading bitcoin
+   → [+] Befehl ausgeführt
+   >> quit
+
+════════════════════════════════════════════════════════════════════════════════
+                          REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+✓ Python 3.11+
+✓ .env mit API-Keys:
+  - OPENAI_API_KEY
+  - COMPOSIO_API_KEY
+  - GEMINI_API_KEY
+
+Auto-Installation: Fehlende Module werden automatisch via pip installiert
+
+════════════════════════════════════════════════════════════════════════════════
+                              FILES
+════════════════════════════════════════════════════════════════════════════════
+
+JARVIS.bat                              ← MAIN LAUNCHER
+JARVIS_LAUNCHER_ANLEITUNG.md           ← Vollständige Anleitung
+JARVIS_QUICK_REFERENCE.txt             ← Diese Datei
+
+.logs/                                  ← Aktivitätsloggen
+.data/                                  ← State, Konfiguration
+.env                                    ← API-Keys (NICHT versenden!)
+
+════════════════════════════════════════════════════════════════════════════════
+                            SYSTEM STATUS
+════════════════════════════════════════════════════════════════════════════════
+
+Menü 5 wählen für:
+- JARVIS System-Status
+- Python-Version
+- API-Keys Status
+- Logs-Anzahl
+- Task-History
+
+════════════════════════════════════════════════════════════════════════════════
+                              SAFETY
+════════════════════════════════════════════════════════════════════════════════
+
+⚠️  Autonomous Trading:
+    - DEMO-MODE (keine echten Trades)
+    - Safety-Toggle immer verfügbar
+    - Kann jederzeit deaktiviert werden
+
+🔐 API-Keys:
+    - .env NICHT committen
+    - Sicher lagern (nur lokal)
+    - Regelmäßig rotieren
+
+════════════════════════════════════════════════════════════════════════════════
+
+Boss, JARVIS lädt vollständig per JARVIS.bat
+
+Alles in EINEM Befehl — keine Kommandozeile nötig!
+
+════════════════════════════════════════════════════════════════════════════════

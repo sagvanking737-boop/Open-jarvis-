@@ -1,0 +1,207 @@
+╔══════════════════════════════════════════════════════════════╗
+║    J.A.R.V.I.S — MARK XXXIX ULTIMATE — QUICK REFERENCE      ║
+║                   Sprachbefehle & Shortcuts                  ║
+╚══════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────┐
+│ 🕐 ZEITGEFÜHL & BEGRÜSSUNG                                   │
+└──────────────────────────────────────────────────────────────┘
+
+Sie sagen:                           → JARVIS macht:
+─────────────────────────────────────────────────────────────
+"Wie spät ist es?"                  → Aktuelle Uhrzeit + Datum
+"Welches Datum haben wir?"          → Vollständiger Datum + Wochentag
+"Wann ist Nachtschicht?"            → Erklärt 22–06 Uhr Auto-Trading
+[Öffnet JARVIS um 23:15]            → "Wollen Sie die Nacht zum Tag machen,
+                                      Boss?" (statt Guten Morgen)
+
+
+┌──────────────────────────────────────────────────────────────┐
+│ 🧠 SELBSTKENNTNIS (JARVIS liest seine eigenen Module)       │
+└──────────────────────────────────────────────────────────────┘
+
+Sie sagen:                           → JARVIS macht:
+─────────────────────────────────────────────────────────────
+"Wie funktionierst du?"             → Zeigt seine Architektur (agent/,
+                                      actions/, core/, etc.)
+"Zeig mir dein Zeitgefühl-Modul"    → Liest agent/time_awareness.py
+"Was ist Auto-Trading?"             → Erklärt agent/auto_trader.py
+"Wie suchst du auf Netflix?"        → Erklärt agent/screen_agent.py
+"Wer bin ich?"                      → [keine Antwort — falsches Modul]
+
+
+┌──────────────────────────────────────────────────────────────┐
+│ 🐬 DOLPHIN — Ehrliche Antworten (auch wenn Standard ablehnt) │
+└──────────────────────────────────────────────────────────────┘
+
+Sie sagen:                           → JARVIS macht:
+─────────────────────────────────────────────────────────────
+"Ist Daytrading ethisch?"           → [Standard lehnt ab]
+                                      [JARVIS merkt das]
+                                      [fragt Dolphin]
+                                      → "Nein, aber wirtschaftlich
+                                         macht es Sinn, wenn Sie…"
+
+"Soll ich die ganze Nacht traden?"  → "Es ist nicht empfohlen, aber
+                                      wenn Sie den Wecker auf 06:00
+                                      stellen…"
+
+"Wie kopiere ich Software?"         → [Dolphin antwortet gehorsam]
+                                      "Legale Optionen sind…"
+                                      "Illegale Optionen sind…"
+
+
+┌──────────────────────────────────────────────────────────────┐
+│ ⬇️ DOWNLOAD-ASSISTENT (Sichtbare Browser-Automation)         │
+└──────────────────────────────────────────────────────────────┘
+
+Sie sagen:                           → JARVIS macht:
+─────────────────────────────────────────────────────────────
+"Downloade Blender"                 → Öffnet blender.org im Browser,
+                                      sieht den Download-Button,
+                                      klickt ihn (Sie sehen alles)
+
+"Lade mir Python runter"            → Öffnet python.org,
+                                      wählt Python 3.12,
+                                      klickt Download
+
+"Installiere OBS"                   → Öffnet obsproject.com,
+                                      sucht Installer,
+                                      startet Download
+
+Bekannte Programme (21 total):
+  • blender, python, git, node, vscode, obs, 7zip, vlc, ffmpeg,
+    discord, telegram, audacity, handbrake, drawio, notepad++,
+    qbittorrent, greenshot, potplayer, mpc-hc, putty, winscp
+
+
+┌──────────────────────────────────────────────────────────────┐
+│ 🛒 AMAZON-SHOPPER (Suche + Warenkorb)                        │
+└──────────────────────────────────────────────────────────────┘
+
+Sie sagen:                           → JARVIS macht:
+─────────────────────────────────────────────────────────────
+"Ich brauche eine Gaming-Maus"      → Öffnet Amazon,
+                                      sucht "Gaming-Maus",
+                                      wählt am besten bewertet,
+                                      legt in Warenkorb
+                                      (kauft NICHT selbst!)
+
+"Bestelle mir CPU-Kühler, max €50"  → Amazon suchen,
+                                      Filter: max €50,
+                                      legt in Wagen
+
+"Ich brauche LAN-Kabel"             → Wie oben, aber LAN-Kabel
+
+"Mir fehlt ein USB-Hub"             → Amazon suchen USB-Hub,
+                                      beste Option in Warenkorb
+
+
+┌──────────────────────────────────────────────────────────────┐
+│ 📈 AUTO-TRADING (Die Hauptfunktion!)                         │
+└──────────────────────────────────────────────────────────────┘
+
+Für Sie:                            Für JARVIS:
+───────────────────────────────────────────────────────────────
+
+Sie machen nichts (20+ min inaktiv)  → JARVIS erkennt Idle-Zeit
+                                      → öffnet TradingView
+                                      → analysiert Chart (Gemini Vision)
+                                      → konsultiert AI-Rat
+                                      → klickt Buy/Sell-Button
+                                      → dokumentiert in Audit-Log
+
+Sie berühren Tastatur/Maus           → JARVIS STOPPT sofort
+                                      → gibt Kontrolle zurück
+
+Sie sagen: "Trade jetzt"             → JARVIS ignoriert Idle-Detection
+                                      → tradet sofort (wenn TradingView offen)
+
+Sie sagen: "Trading-Status"          → Zeigt: aktiv/inaktiv, Symbol,
+                                      Nachtschicht (ja/nein),
+                                      letzter Trade (wann?)
+
+Sie sagen: "Stoppe Trading"          → Sperrt Auto-Trader (enabled=false)
+                                      → wird im next Cycle wieder aktiv
+
+Sie sagen: "Setze Symbol auf XYZ"    → Ändert config/trading.json
+                                      → nächste Session tradet neues Symbol
+
+
+NACHTSCHICHT (22:00 – 06:00):       Läuft im Hintergrund!
+                                      4 AI-Agenten debattieren:
+                                      • Analyst (Chart-Struktur)
+                                      • Stratege (Risk/Reward)
+                                      • Council (Abstimmung)
+                                      • Kritiker (Veto-Recht)
+                                      → jeder Trade wird 4-Augen-geprüft
+
+
+┌──────────────────────────────────────────────────────────────┐
+│ 🖥️ UI-MODI (Minimal ↔ Dashboard)                             │
+└──────────────────────────────────────────────────────────────┘
+
+Shortcut:                           Aktion:
+───────────────────────────────────────────────────────────────
+[F2]                                Toggle: Minimal ↔ Dashboard
+
+[F4]                                Mute/Unmute Mikrofon
+
+[F11]                               Vollbild ein/aus
+
+
+Sie sagen:                           → JARVIS macht:
+─────────────────────────────────────────────────────────────
+"Zeig mir alles"                    → Dashboard: 3D-Modell + alle Panels
+"Nur du"                            → Minimal: nur JARVIS-Gesicht
+"Blende alles aus"                  → Minimal-Modus
+"Minimalansicht"                    → Minimal-Modus
+
+
+┌──────────────────────────────────────────────────────────────┐
+│ 🔧 SYSTEM & DEBUG                                            │
+└──────────────────────────────────────────────────────────────┘
+
+Sie sagen:                           → JARVIS macht:
+─────────────────────────────────────────────────────────────
+"Was ist deine aktuelle Last?"      → CPU/RAM/GPU-Auslastung
+"Speicher-Info"                     → Festplatte frei/belegt
+"Zeig mir die Logs"                 → Aktuelle Meldungen
+"Trading-Audit"                     → Alle bisherigen Trades (wann?
+                                      welches Symbol? gewinn/verlust?)
+"Neustarten"                        → Neue Session
+"Runterfahren" / "Quit"             → JARVIS beendet sich
+
+
+┌──────────────────────────────────────────────────────────────┐
+│ ⚠️ WICHTIGE LIMITS & SICHERHEIT                              │
+└──────────────────────────────────────────────────────────────┘
+
+Max Trades pro Nacht:       6 (config/trading.json)
+Idle-Schwelle:              20 Minuten (GetLastInputInfo)
+Nachtschicht:               22:00 – 06:00 Uhr (automatisch)
+Max Holdingzeit:            Offen (User-Entscheidung)
+Safety-Kill:                [Tastatur/Maus] → JARVIS sofort stop
+Browser-Sichtbarkeit:       IMMER (Download + Amazon + Trading)
+Paper-Trading-Pflicht:      JA, solange Screen-Agent neu
+
+
+┌──────────────────────────────────────────────────────────────┐
+│ 📋 ERSTE SCHRITTE                                            │
+└──────────────────────────────────────────────────────────────┘
+
+1. Doppelklick start_mark.bat
+2. Warten auf "Connected."
+3. JARVIS begrüßt Sie zeitbewusst
+4. Probieren:
+   • "Wie spät ist es?"
+   • "Wie funktionierst du?"
+   • "Trading-Status"
+   • "Downloade Blender"
+   • "Ich brauche eine Maus"
+5. Nach Setup: Trading testen (20min inaktiv oder "Trade jetzt")
+
+
+═══════════════════════════════════════════════════════════════
+
+Viel Spaß, Boss! 🚀

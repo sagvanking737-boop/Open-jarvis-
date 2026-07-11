@@ -1,0 +1,51 @@
+# Local secrets
+.env
+config/api_keys.json
+config/*secrets*.json
+config/*credentials*.json
+*.pem
+*.key
+
+# Runtime data
+.data/
+.logs/
+downloads/
+bin/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Local state
+.boss_engagement_state
+memory/long_term.json
+vault/
+vault/Backups/
+vault/Contacts/API-Keys-Integrations.md
+vault/**/Secrets*.md
+vault/**/Credentials*.md
+vault/**/Private*.md
+
+# Editors / OS
+.obsidian/
+.vscode/
+node_modules/
+integrations/freqtrade/upstream/
+integrations/freqtrade/.venv/
+integrations/freqtrade/user_data/data/
+integrations/freqtrade/user_data/tradesv3*.sqlite*
+.idea/
+*.code-workspace
+Thumbs.db
+Desktop.ini
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
